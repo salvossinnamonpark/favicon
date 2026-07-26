@@ -1,0 +1,14 @@
+{
+  "name": "Salvos Colours",
+  "short_name": "Salvos Colours",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/salvossinnamonpark/favicon/main/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
