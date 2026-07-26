@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="icon" type="image/png" href="/https://raw.githubusercontent.com/salvossinnamonpark/favicon/main/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/https://raw.githubusercontent.com/salvossinnamonpark/favicon/main/favicon.svg" />
+<link rel="shortcut icon" href="/https://raw.githubusercontent.com/salvossinnamonpark/favicon/main/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/https://raw.githubusercontent.com/salvossinnamonpark/favicon/main/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Salvos Colours" />
+<link rel="manifest" href="/https://raw.githubusercontent.com/salvossinnamonpark/favicon/main/apple-touch-icon.png/site.webmanifest" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Colour Rotation Chart</title>
+    <style>
+        /* Reset margins and force full viewport height */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        /* Fixed Header Frame - PINNED to top-left */
+        #header-container {
+            width: 100%;
+            height: 168px; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background-color: #ffffff;
+            text-align: left; 
+            display: flex;
+            align-items: center; 
+        }
+        
+        /* The Actual Graphic Styling */
+        #header-container img {
+            margin-left: 0; 
+            max-width: 100%; 
+            height: auto; 
+            max-height: 168px; 
+            object-fit: contain; 
+            object-position: left; 
+        }
+
+        /* Scrolling Spreadsheet Frame */
+        #sheet-container {
+            position: absolute;
+            top: 168px; /* Matches header height */
+            bottom: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%; /* Changed from calc(100% + 45px) */
+            border: none;
+            margin-top: 0px; /* Changed from -45px so Row 1 is fully visible */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Locked, Left-Aligned Graphic Header -->
+    <div id="header-container">
+        <img src="https://i.imgur.com/DbsayBy.png" alt="Colour Rotation Chart Header">
+    </div>
+
+    <!-- 2. Live, Scrolling Google Sheet -->
+    <div id="sheet-container">
+        <iframe src="https://docs.google.com/spreadsheets/d/1RtI2H2PXq0EUJPGSQoGZVyfgszamK_Y0897BNY56wb0/preview"></iframe>
+    </div>
+
+</body>
+</html>
